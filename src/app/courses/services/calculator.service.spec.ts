@@ -19,6 +19,7 @@ describe('CalculatorService',()=>{
     expect(result).toBe(4);
     expect(loggerSpy.log).toHaveBeenCalledTimes(1);
   });
+
   it('should subtract two numbers', ()=> {
     const result = calculator.subtract(2,2);
     expect(result).toBe(0, "unexpected substraction result");
